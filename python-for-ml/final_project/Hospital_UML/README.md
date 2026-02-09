@@ -29,13 +29,6 @@ The project follows a hierarchical and modular design:
 
 ---
 
-## 🖼️ UML Diagram
-
-![UML Diagram](path_to_your_UML_diagram.png)  
-*Replace `path_to_your_UML_diagram.png` with your actual diagram file.*
-
----
-
 ## 🚀 How to Run
 
 1. Ensure **Python 3.x** is installed.  
