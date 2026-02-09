@@ -56,6 +56,7 @@ class SystemManager:
         else:
             print(f"Error: Department '{dept_name}' not found.")
 
+    # --- 4. Information View  ---
     def remove_staff(self, dept_name, staff_name):
         dept = self._get_dept(dept_name)
         if dept:
@@ -63,3 +64,28 @@ class SystemManager:
             print(f"Success: Staff member '{staff_name}' removed from {dept_name}.")
         else:
             print(f"Error: Department '{dept_name}' not found.")
+
+    def view_person_info(self, dept_name, name, person_type):
+        """Displays basic info ."""
+        dept = self._get_dept(dept_name)
+        if dept:
+            target_list = dept.patients if person_type == "patient" else dept.staff
+            for p in target_list:
+                if p.name == name:
+                    print(f"\n[INFO]: {p.view_info()}")
+                    return
+            print(f"Error: {person_type.capitalize()} '{name}' not found.")
+        else:
+            print("Error: Department not found.")
+
+    def view_patient_record(self, dept_name, patient_name):
+        """Displays the  medical record for patients."""
+        dept = self._get_dept(dept_name)
+        if dept:
+            for p in dept.patients:
+                if p.name == patient_name:
+                    print(f"\n[RECORD]: {p.view_record()}")
+                    return
+            print(f"Error: Patient '{patient_name}' not found.")
+        else:
+            print("Error: Department not found.")

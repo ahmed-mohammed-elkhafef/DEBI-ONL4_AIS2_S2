@@ -12,9 +12,11 @@ def main():
         print("4. Remove Patient")
         print("5. Add Staff")
         print("6. Remove Staff")
-        print("7. Exit")
+        print("7. View Basic Info (Patient/Staff)")
+        print("8. View Patient Record (Medical)")
+        print("9. Exit")
         
-        choice = input("Select an option (1-7): ")
+        choice = input("Select an option (1-9): ")
 
         if choice == '1':
             d_name = input("Enter department name: ")
@@ -47,8 +49,16 @@ def main():
             d_name = input("Enter department name: ")
             s_name = input("Enter staff name to remove: ")
             manager.remove_staff(d_name, s_name)
-
+        
         elif choice == '7':
+            t = input("Type (patient/staff): ").lower()
+            d = input("Dept: "); n = input("Name: ")
+            manager.view_person_info(d, n, t)
+        elif choice == '8':
+            d = input("Dept: "); n = input("Patient Name: ")
+            manager.view_patient_record(d, n)
+
+        elif choice == '9':
             print("Exiting System. Goodbye!")
             break
 
