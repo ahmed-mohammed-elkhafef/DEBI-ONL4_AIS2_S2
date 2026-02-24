@@ -50,7 +50,7 @@ The **Hospital Management System (HMS)** is a comprehensive desktop-based GUI ap
 The project follows a clean, modular, Object-Oriented structure separating data models, business logic, and the user interface.
 
 ```
-Group 5 - HMS/
+Group 2 - HMS/
 │
 ├── __init__.py             # Marks root directory as Python package
 ├── app.py                  # 🖥️ Main GUI Application Entry Point (Tkinter)
