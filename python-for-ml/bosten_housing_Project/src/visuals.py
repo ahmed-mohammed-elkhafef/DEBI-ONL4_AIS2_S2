@@ -2,10 +2,11 @@
 # Suppress matplotlib user warnings
 # Necessary for newer version of matplotlib
 import warnings
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as pl
 import numpy as np
 from sklearn.model_selection import learning_curve, ShuffleSplit, train_test_split
 from sklearn.tree import DecisionTreeRegressor
+from sklearn import model_selection as curves
 
 # Suppress matplotlib user warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="matplotlib")
@@ -19,7 +20,7 @@ def ModelComplexity(X, y):
         The learning and testing errors rates are then plotted. """
     
     # Create 10 cross-validation sets for training and testing
-    cv = ShuffleSplit(X.shape[0], n_iter = 10, test_size = 0.2, random_state = 0)
+    cv = ShuffleSplit(n_splits = 10, test_size = 0.2, random_state = 0)
 
     # Vary the max_depth parameter from 1 to 10
     max_depth = np.arange(1,11)
