@@ -730,6 +730,11 @@
                     "position": "Head Nurse"
                 }
             ]
+        },
+        {
+            "name": "skin care",
+            "patients": [],
+            "staff": []
         }
     ]
 }
