@@ -1,0 +1,10 @@
+artifact_location: file:d:\01_ENV_AI\DEBI-ONL4\DEBI-ONL4_AIS2_S2\python-for-ml\final_project\session_22\assignment\final_code_design\outputs\mlruns/880717722299808904/models/m-f3de29229aa54d2eb1e11b1e405a3542/artifacts
+creation_timestamp: 1774800721537
+experiment_id: '880717722299808904'
+last_updated_timestamp: 1774800724340
+model_id: m-f3de29229aa54d2eb1e11b1e405a3542
+model_type: null
+name: model_lr
+source_run_id: 28e27ded58424f2a860ac2932d85c031
+status: 2
+status_message: null

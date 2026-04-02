@@ -1,0 +1,10 @@
+artifact_location: file:d:\01_ENV_AI\DEBI-ONL4\DEBI-ONL4_AIS2_S2\python-for-ml\final_project\session_22\assignment\final_code_design\outputs\mlruns/880717722299808904/models/m-4eba2e8405bc46078d1e09b229373461/artifacts
+creation_timestamp: 1774800717507
+experiment_id: '880717722299808904'
+last_updated_timestamp: 1774800721129
+model_id: m-4eba2e8405bc46078d1e09b229373461
+model_type: null
+name: model_rf
+source_run_id: 6aa7bfdd8a40430ba70047deadb165e9
+status: 2
+status_message: null

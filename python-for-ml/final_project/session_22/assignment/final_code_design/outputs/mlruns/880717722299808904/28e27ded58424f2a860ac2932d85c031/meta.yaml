@@ -1,0 +1,14 @@
+artifact_uri: file:d:\01_ENV_AI\DEBI-ONL4\DEBI-ONL4_AIS2_S2\python-for-ml\final_project\session_22\assignment\final_code_design\outputs\mlruns/880717722299808904/28e27ded58424f2a860ac2932d85c031/artifacts
+end_time: 1774800724350
+entry_point_name: ''
+experiment_id: '880717722299808904'
+lifecycle_stage: active
+run_id: 28e27ded58424f2a860ac2932d85c031
+run_name: LogisticRegression_Training
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774800721222
+status: 3
+tags: []
+user_id: Ahmed

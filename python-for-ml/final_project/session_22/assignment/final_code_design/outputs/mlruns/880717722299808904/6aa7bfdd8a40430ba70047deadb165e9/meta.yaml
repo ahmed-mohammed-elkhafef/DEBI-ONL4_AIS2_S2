@@ -1,0 +1,14 @@
+artifact_uri: file:d:\01_ENV_AI\DEBI-ONL4\DEBI-ONL4_AIS2_S2\python-for-ml\final_project\session_22\assignment\final_code_design\outputs\mlruns/880717722299808904/6aa7bfdd8a40430ba70047deadb165e9/artifacts
+end_time: 1774800721219
+entry_point_name: ''
+experiment_id: '880717722299808904'
+lifecycle_stage: active
+run_id: 6aa7bfdd8a40430ba70047deadb165e9
+run_name: RandomForest_Training
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774800701742
+status: 3
+tags: []
+user_id: Ahmed
