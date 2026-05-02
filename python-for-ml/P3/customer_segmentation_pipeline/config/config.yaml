@@ -1,0 +1,56 @@
+# Configuration for Customer Segmentation Pipeline
+
+# Data
+data:
+  raw_path: "data/raw/customers.csv"
+  processed_path: "data/processed/"
+  features:
+    - Fresh
+    - Milk
+    - Grocery
+    - Frozen
+    - Detergents_Paper
+    - Delicatessen
+  drop_columns:
+    - Region
+    - Channel
+
+# Preprocessing
+preprocessing:
+  test_size: 0.25
+  random_state: 42
+  
+# Outliers (Tukey's Method)
+outliers:
+  method: "tukey"
+  iqr_multiplier: 1.5
+  
+# Feature Scaling
+scaling:
+  method: "log"  # natural logarithm
+  
+# PCA
+pca:
+  n_components_full: 6
+  n_components_reduced: 2
+  
+# Clustering
+clustering:
+  algorithm: "kmeans"  # or "gmm"
+  n_clusters: 3
+  random_state: 42
+  kmeans_init: "k-means++"
+  kmeans_n_init: 10
+  
+# Model paths
+model:
+  pipeline_path: "models/segmentation_pipeline.pkl"
+  scaler_path: "models/scaler.pkl"
+  pca_path: "models/pca.pkl"
+  clusterer_path: "models/clusterer.pkl"
+  
+# Dashboard
+dashboard:
+  host: "127.0.0.1"
+  port: 8050
+  debug: false
